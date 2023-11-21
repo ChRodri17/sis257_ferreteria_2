@@ -11,7 +11,7 @@ async function bootstrap() {
   app.enableCors();
 
   const config = new DocumentBuilder()
-    .setTitle('API Rest SIS257')
+    .setTitle('API Rest FERRETERIA')
     .setDescription('API de la materia Desarrollo Aplicación INT/Internet II')
     .setVersion('1.0')
     .addTag('producto, categoria')
