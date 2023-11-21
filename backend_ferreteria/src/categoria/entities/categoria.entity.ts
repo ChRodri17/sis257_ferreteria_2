@@ -1,4 +1,4 @@
-import { ProductoEntity } from 'src/producto/entities/producto.entity';
+import { Producto } from 'src/producto/entities/producto.entity';
 import {
   Column,
   CreateDateColumn,
@@ -9,7 +9,7 @@ import {
 } from 'typeorm';
 
 @Entity('categoria')
-export class CategoriaEntity {
+export class Categoria {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -22,6 +22,6 @@ export class CategoriaEntity {
   @UpdateDateColumn({ name: 'fecha_modificacion' })
   fechaModificacion: Date;
 
-  @OneToMany(() => ProductoEntity, (producto) => producto.categoria)
-  productos: ProductoEntity[];
+  @OneToMany(() => Producto, (producto) => producto.categoria)
+  productos: Producto[];
 }

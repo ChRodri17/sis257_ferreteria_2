@@ -1,4 +1,4 @@
-import { CategoriaEntity } from 'src/categoria/entities/categoria.entity';
+import { Categoria } from 'src/categoria/entities/categoria.entity';
 import {
   Column,
   CreateDateColumn,
@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class ProductoEntity {
+export class Producto {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -41,7 +41,7 @@ export class ProductoEntity {
   @UpdateDateColumn({ name: 'fecha_modificacion' })
   fechaModificacion: Date;
 
-  @ManyToOne(() => CategoriaEntity, (categoria) => categoria.productos)
+  @ManyToOne(() => Categoria, (categoria) => categoria.productos)
   @JoinColumn({ name: 'id_categoria', referencedColumnName: 'id' })
-  categoria: CategoriaEntity;
+  categoria: Categoria;
 }
