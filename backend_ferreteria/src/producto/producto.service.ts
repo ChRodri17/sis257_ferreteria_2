@@ -42,14 +42,14 @@ export class ProductoService {
 
   async findAll(): Promise<Producto[]> {
     return this.productoRepository.find({
-      relations: { categoria: true },
+      relations: { categorias: true },
     });
   }
 
   async findOne(id: number): Promise<Producto> {
     const producto = await this.productoRepository.findOne({
       where: { id },
-      relations: { categoria: true },
+      relations: { categorias: true },
     });
 
     if (!producto) {
