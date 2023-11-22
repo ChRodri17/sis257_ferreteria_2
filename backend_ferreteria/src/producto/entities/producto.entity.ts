@@ -1,4 +1,5 @@
 import { Categoria } from 'src/categoria/entities/categoria.entity';
+import { Unidad } from 'src/unidad/entities/unidad.entity';
 import {
   Column,
   CreateDateColumn,
@@ -44,4 +45,8 @@ export class Producto {
   @ManyToOne(() => Categoria, (categoria) => categoria.productos)
   @JoinColumn({ name: 'id_categoria', referencedColumnName: 'id' })
   categoria: Categoria;
+
+  @ManyToOne(() => Unidad, (unidad) => unidad.productos)
+  @JoinColumn({ name: 'id_unidad', referencedColumnName: 'id' })
+  unidad: Unidad;
 }

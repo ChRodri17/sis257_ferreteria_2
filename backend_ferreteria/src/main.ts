@@ -14,7 +14,7 @@ async function bootstrap() {
     .setTitle('API Rest FERRETERIA')
     .setDescription('API de la materia Desarrollo Aplicación INT/Internet II')
     .setVersion('1.0')
-    .addTag('producto, categoria')
+    .addTag('producto, categoria, unidad')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('apidoc', app, document);
