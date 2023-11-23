@@ -1,9 +1,13 @@
+import { Cliente } from 'src/cliente/entities/cliente.entity';
 import { Detalle } from 'src/detalle/entities/detalle.entity';
+import { Usuario } from 'src/usuario/entities/usuario.entity';
 
 import {
   Column,
   CreateDateColumn,
   Entity,
+  JoinColumn,
+  ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
@@ -30,6 +34,14 @@ export class Venta {
 
   @UpdateDateColumn({ name: 'fecha_modificacion' })
   fechaModificacion: Date;
+
+  @ManyToOne(() => Usuario, (usuario) => usuario.ventas)
+  @JoinColumn({ name: 'id_usuario', referencedColumnName: 'id' })
+  usuario: Usuario;
+
+  @ManyToOne(() => Cliente, (cliente) => cliente.ventas)
+  @JoinColumn({ name: 'id_cliente', referencedColumnName: 'id' })
+  cliente: Cliente;
 
   @OneToMany(() => Detalle, (detalle) => detalle.venta)
   detalles: Detalle[];
