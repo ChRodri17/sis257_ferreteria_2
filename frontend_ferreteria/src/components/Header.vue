@@ -10,7 +10,7 @@ const authStore = useAuthStore();
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <h2>Ferreteria <em>Sucre</em></h2>
+                    <h2>Ferreteria <em>FerroTodo</em></h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
