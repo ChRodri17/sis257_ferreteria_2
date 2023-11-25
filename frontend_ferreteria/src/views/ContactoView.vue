@@ -18,7 +18,7 @@
 -->
                     <div id="map">
                         <iframe
-                            src="https://www.google.com/maps/place/Industrias+Ferrotodo+Ltda/@-19.0347026,-65.2465977,17z/data=!3m1!4b1!4m6!3m5!1s0x93fbc8d40a"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.7287435766582!2d-65.2441837368952!3d-19.034702611054836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8d40a25b7ab%3A0xb8b7f8db876e5626!2sIndustrias%20Ferrotodo%20Ltda!5e0!3m2!1ses-419!2sbo!4v1700917358636!5m2!1ses-419!2sbo"
                             width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>Enviar mesnsajes</h2>
+                        <h2>Enviar mensajes</h2>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                                        <button type="submit" id="form-submit" class="filled-button">Enviar mensaje</button>
                                     </fieldset>
                                 </div>
                             </div>
