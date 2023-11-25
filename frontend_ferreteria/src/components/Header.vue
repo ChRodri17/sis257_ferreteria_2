@@ -9,8 +9,13 @@ const authStore = useAuthStore();
     <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <h2>Ferreteria <em>FerroTodo</em></h2>
+                <a class="navbar-brand" href="/">
+                    <h2>
+                        <v-container fluid>
+                            <img src="../assets/images/logo.png" alt="">
+                        </v-container>
+                        Ferreteria <em>Sucre</em>
+                    </h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
