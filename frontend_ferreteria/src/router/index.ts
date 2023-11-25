@@ -1,10 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import { useAuthStore } from '@/stores';
-import { getTokenFromLocalStorage } from '@/helpers';
 import LoginView from "@/views/LoginView.vue";
-
-
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,14 +11,11 @@ const router = createRouter({
       component: HomeView
     },
 
-    
     {
       path: "/login",
       name: "login",
       component: LoginView
     },
-
-
 
     {
       path: '/productovista',
@@ -37,12 +30,6 @@ const router = createRouter({
     },
 
     {
-      path: '/detalle',
-      name: 'detalle',
-      component: () => import('../views/DetallesView.vue')
-    },
-
-    {
       path: '/productos',
       name: 'productos',
       component: () => import('../views/ProductoView.vue'),
@@ -52,7 +39,32 @@ const router = createRouter({
         { path: 'editar/:id', component: () => import('../components/producto/ProductoEdit.vue') }
       ]
     },
-
+    {
+      path: '/categorias',
+      name: 'categorias',
+      component: () => import('../views/CategoriaView.vue'),
+      children: [
+        { path: '', component: () => import('../components/categoria/CategoriaList.vue') },
+        { path: 'crear', component: () => import('../components/categoria/CategoriaCreate.vue') },
+        {
+          path: 'editar/:id',
+          component: () => import('../components/categoria/CategoriaEdit.vue')
+        }
+      ]
+    },
+    {
+      path: '/unidades',
+      name: 'unidades',
+      component: () => import('../views/UnidadView.vue'),
+      children: [
+        { path: '', component: () => import('../components/unidad/UnidadList.vue') },
+        { path: 'crear', component: () => import('../components/unidad/UnidadCreate.vue') },
+        {
+          path: 'editar/:id',
+          component: () => import('../components/unidad/UnidadEdit.vue')
+        }
+      ]
+    },
 
 
     {
