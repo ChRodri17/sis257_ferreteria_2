@@ -26,7 +26,7 @@
                     <div class="left-content">
                         <h4>CONTÁCTANOS</h4>
                         <p>Nuestra prestigiosa industria se encuentra ubicada en sector del mercado campesino zona
-                            el reloj.<br><br>Nuestra tienda abre todos los dias en horarios de oficina.</p>
+                            gas center.<br><br>Nuestra tienda abre todos los dias en horarios de oficina.</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>

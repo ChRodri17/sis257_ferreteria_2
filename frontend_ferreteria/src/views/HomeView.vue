@@ -82,7 +82,7 @@
                 <li><a >Productos al alcance de su bolsillo.</a></li>
                 <li><a >Productos de marcas reconocidas.</a></li>
                 <li><a >Calidad y garantia.</a></li>
-                <li><a >Maximo rendimiento.</a></li>
+                <li><a >Buenos Precios.</a></li>
               </ul>
               <a href="about.html" class="filled-button">Read More</a>
             </div>
