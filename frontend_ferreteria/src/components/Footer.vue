@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-12"> 
                     <div class="inner-content"> 
-                        <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+                        <p>Copyright &copy; PROYECTO FERRETERIA, Ltd.
 
-                            - Design: <a rel="nofollow noopener" href="https://templatemo.com"
-                                target="_blank">TemplateMo</a></p>
+                            - INFORMATICA: <a rel="nofollow noopener" href="https://templatemo.com"
+                                target="_blank">U.M.R.P.S.F.X.CH</a></p>
                     </div>
                 </div>
             </div>

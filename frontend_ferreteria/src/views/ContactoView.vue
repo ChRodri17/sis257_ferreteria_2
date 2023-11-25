@@ -18,16 +18,15 @@
 -->
                     <div id="map">
                         <iframe
-                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            src="https://www.google.com/maps/place/Industrias+Ferrotodo+Ltda/@-19.0347026,-65.2465977,17z/data=!3m1!4b1!4m6!3m5!1s0x93fbc8d40a"
                             width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="left-content">
                         <h4>CONTÁCTANOS</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur
-                            similiqu consectetur.<br><br>Lorem ipsum dolor sit amet, consectetur adipisic elit. Et,
-                            consequuntur, modi mollitia corporis ipsa voluptate corrupti.</p>
+                        <p>Nuestra prestigiosa industria se encuentra ubicada en sector del mercado campesino zona
+                            el reloj.<br><br>Nuestra tienda abre todos los dias en horarios de oficina.</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -45,7 +44,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>Send us a Message</h2>
+                        <h2>Enviar mesnsajes</h2>
                     </div>
                 </div>
                 <div class="col-md-8">
