@@ -14,7 +14,7 @@ const authStore = useAuthStore();
                         <v-container fluid>
                             <img src="../assets/images/logo.png" alt="">
                         </v-container>
-                        Ferreteria <em>Sucre</em>
+                        Ferreteria <em>FERROTODO</em>
                     </h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"

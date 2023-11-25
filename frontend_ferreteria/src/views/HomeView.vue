@@ -84,12 +84,12 @@
                 <li><a >Calidad y garantia.</a></li>
                 <li><a >Buenos Precios.</a></li>
               </ul>
-              <a href="about.html" class="filled-button">Read More</a>
+              <a href="/productos" class="btn btn-success">Ver más Productos</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="@/assets/images/feature-image.jpg" alt="">
+              <img src="@/assets/images/Acero.jpg" alt="">
             </div>
           </div>
         </div>
@@ -104,12 +104,12 @@
             <div class="inner-content">
               <div class="row">
                 <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.
+                  <h4>Amabilidad &amp; Puntualidad en <em>Industrias FERROTODO</em></h4>
+                  <p>Donde la atención al cliente es nuestra prioridad.
                   </p>
                 </div>
                 <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
+                  <a href="#" class="filled-button">Ir Inicio</a>
                 </div>
               </div>
             </div>
