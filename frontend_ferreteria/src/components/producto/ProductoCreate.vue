@@ -4,7 +4,7 @@ import http from '@/plugins/axios'
 import router from '@/router'
 import type { Categoria } from '@/models/categoria';
 import type { Unidad } from '@/models/unidad';
-//-------------------------------
+
 var categorias = ref<Categoria[]>([])
 async function getCategorias() {
   categorias.value = await http.get("categorias").then((response) => response.data)
@@ -13,7 +13,7 @@ async function getCategorias() {
 onMounted(() => {
   getCategorias()
 })
-// -------------------------------
+
 var unidades = ref<Unidad[]>([])
 async function getUnidades() {
   unidades.value = await http.get("unidades").then((response) => response.data)
@@ -104,7 +104,7 @@ function goBack() {
 
         <div class="form-floating mb-3">
           <select v-model="idUnidad" class="form-select">
-            <option v-for="unidad in unidades" :value="unidad.id">{{ unidad.descripcion }} </option>
+            <option v-for="unidad in unidades" :value="unidad.id"> {{ unidad.descripcion }} </option>
           </select>
           <label for="unidad">Unidad</label>
         </div>

@@ -23,34 +23,29 @@ const authStore = useAuthStore();
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
+                        <!-- <li class="nav-item ">
                             <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span>
                             </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/">Inicio</a>
                         </li>
-
-                        <!--<li class="nav-item">
-                            <a class="nav-link" href="">
-                        <li class="breadcrumb-item">
-                            <RouterLink to="/productovista"></RouterLink>Productos
-                        </li>
-                        </a>
-                        </li>  -->
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/productos">Productos</a>
+                            <RouterLink to="/productos" class="nav-link click-scroll">Productos</RouterLink>
                         </li>
 
+                        <li v-if="authStore.token" class="nav-item">
+                            <RouterLink to="/categorias" class="nav-link click-scroll">Categoria</RouterLink>
+                        </li>
 
-
-
-                        <!--<a class="nav-link">
-                            <RouterLink to="/contacto"> Contacto</RouterLink>
-                        </a>-->
+                        <li v-if="authStore.token" class="nav-item">
+                            <RouterLink to="/unidades" class="nav-link click-scroll">Unidad</RouterLink>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="/contacto">Contacto</a>
                         </li>
-
                         <li class="nav-item">
                             <a v-if="!authStore.token" class="nav-link" href="/login">Iniciar Sesion</a>
                             <a v-else @click="authStore.logout()" class="nav-link">Cerrar Sesión</a>

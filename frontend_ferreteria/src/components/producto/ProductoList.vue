@@ -82,12 +82,12 @@ onMounted(() => {
           </thead>
           <tbody>
 
-            <tr class="table-light" v-for="(producto, index) in productos.values()" :key="producto.id">
+            <tr v-for="(producto, index) in productos.values()" :key="producto.id">
               <th scope="row">{{ index + 1 }}</th>
-              <td>{{ producto.categoria.descripcion }}</td>
+              <td>{{ producto.descripcion }}</td>
               <td>{{ producto.codigo }}</td>
               <td>{{ producto.descripcion }}</td>
-              <td>{{ producto.unidad.descripcion }}</td>
+              <td>{{ producto.unidad }}</td>
               <td>{{ producto.precio }}</td>
               <td>{{ producto.existenciaProducto }}</td>
               <td>
