@@ -35,12 +35,12 @@ const idUnidad = ref('')
 const precio = ref(0)
 const existenciaProducto = ref(0)
 const urlImagen = ref('')
-const total = computed(() => precio.value * existenciaProducto.value)
+//const total = computed(() => precio.value * existenciaProducto.value)
 
 async function crearProducto() {
   await http
     .post(ENDPOINT, {
-      idCategoria: idCategoria.value,
+      idCategoria: idCategoria.value,      
       codigo: codigo.value,
       descripcion: descripcion.value,
       idUnidad: idUnidad.value,
@@ -50,7 +50,7 @@ async function crearProducto() {
 
     })
 
-    .then(() => router.push('/productos'))
+    .then(() => router.push('/producto'))
 }
 
 function goBack() {
@@ -97,7 +97,8 @@ function goBack() {
           <input type="text" class="form-control" v-model="codigo" placeholder="Codigo" required />
           <label for="codigo">Código</label>
         </div>
-        <div class="form-floating">
+
+        <div class="form-floating mb-3">
           <input type="text" class="form-control" v-model="descripcion" placeholder="Descripcion" required />
           <label for="descripcion">Descripción</label>
         </div>
@@ -109,28 +110,26 @@ function goBack() {
           <label for="unidad">Unidad</label>
         </div>
 
-        <div class="form-floating">
+        <div class="form-floating mb-3">
           <input type="number" class="form-control" v-model="precio" placeholder="Precio" required />
           <label for="precio">Precio</label>
         </div>
 
-        <div class="form-floating">
+        <div class="form-floating mb-3">
           <input type="number" class="form-control" v-model="existenciaProducto" placeholder="Existencia Producto"
             required />
           <label for="existenciaProducto">Existencia Producto</label>
         </div>
 
-        <div class="form-floating">
+        <div class="form-floating mb-3">
           <input type="text" class="form-control" v-model="urlImagen" placeholder="imagen" required />
           <label for="imagen">URL Imagen</label>
         </div>
 
-        <div class="form-floating">
+        <!--<div class="form-floating mb-3">
           <input type="number" class="form-control" v-model="total" placeholder="Total" required readonly />
           <label for="Total">Total</label>
-        </div>
-
-
+        </div>-->
 
         <div class="text-center mt-3">
           <button type="submit" class="btn btn-primary btn-lg">Crear</button>
